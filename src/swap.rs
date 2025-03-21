@@ -125,6 +125,9 @@ pub enum Swap {
     SolFi {
         is_quote_to_base: bool,
     },
+    PumpkinSwap {
+        sol_out: bool
+    }
 }
 
 #[derive(BorshSerialize, Copy, Clone, PartialEq, Eq, Debug)]
